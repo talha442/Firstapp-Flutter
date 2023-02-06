@@ -1,26 +1,17 @@
-// ignore_for_file: avoid_unnecessary_containers, prefer_const_constructors
+// ignore_for_file: avoid_unnecessary_containers, prefer_const_constructors, use_key_in_widget_constructors, camel_case_types
 
 import 'package:flutter/material.dart';
+import 'homePage.dart';
 
 void main() {
-  runApp(const myApp());
+  runApp(myApp());
 }
 
-
-// ignore: camel_case_types
 class myApp extends StatelessWidget {
-  const myApp({super.key});
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Material(
-        child: Center(
-          child: Container(
-            child: Text("Welcome To My App"),
-          ),
-        ),
-      ),
+      home: HomePage(),
     );
   }
 }
