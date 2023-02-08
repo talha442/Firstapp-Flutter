@@ -1,5 +1,6 @@
 // ignore_for_file: avoid_unnecessary_containers, prefer_const_constructors, use_key_in_widget_constructors, camel_case_types
 
+import 'package:firstapp/utils/routes.dart';
 import 'package:flutter/material.dart';
 import 'pages/home_page.dart';
 import 'pages/login_page.dart';
@@ -21,8 +22,8 @@ class myApp extends StatelessWidget {
       // initialRoute: "/home",
       routes: {
         "/": (context) => LoginPage(),
-        // "/home": (context) => HomePage(),
-        "/login": (context) => LoginPage(),
+        MyRoutes.homeRoute: (context) => HomePage(),
+        MyRoutes.loginRoute: (context) => LoginPage(),
       },
     );
   }
