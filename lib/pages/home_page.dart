@@ -12,7 +12,7 @@ class HomePage extends StatelessWidget {
     String name = "Talha";
     return Scaffold(
       appBar: AppBar(
-        title: Text("Ecommerce Store"),
+        title: Text("Catalog App", style: TextStyle(color: Colors.black)),
       ),
       body: Center(
         child: Container(
